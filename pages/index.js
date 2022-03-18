@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Navbar from './../components/Navbar/Navbar.jsx'
 import Banner from './../components/Banner/Banner.jsx'
+import SkillsSection from './../components/SkillsSection/SkillsSection.jsx'
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Banner />
+      <SkillsSection />
     </>
   )
 }
