@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from './../styles/Skill.module.css'
+import styles from './../../styles/Skill.module.css'
 
 function formatSkillName(skill = ''){
     const chars = [...skill];
@@ -15,7 +15,7 @@ export default function Skill(props){
         return(
             <li className={styles.listDiv__listItem} key={index}>
                 <p className={styles.listItem__p}>{ formatSkillName(skillName) }</p>
-                <p className={styles.listItem__p}>{ skillLevel }</p>
+                <p className={styles.listItem__p}>{ skillLevel } / 5</p>
             </li>
         )
     })
