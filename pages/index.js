@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import Navbar from './../components/Navbar/Navbar.jsx'
-import Banner from './../components/Banner/Banner.jsx'
-import SkillsSection from './../components/SkillsSection/SkillsSection.jsx'
+import Navbar from '../components/Navbar.jsx'
+import Banner from '../components/Banner.jsx'
+import SkillsSection from '../components/SkillsSection.jsx'
 
 export default function Home() {
   return (

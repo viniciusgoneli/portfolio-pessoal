@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import styles from './Skill.module.css'
+import styles from './../styles/Skill.module.css'
 
 export default function Skill(props){
     const skillsList = Object.entries(props.skillList).map(([skillName, skillLevel], index) => {

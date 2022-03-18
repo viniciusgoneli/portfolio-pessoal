@@ -1,6 +1,6 @@
-import softSkillsSvg from './../../public/images/person-draw.svg'
-import hardSkillsSvg from './../../public/images/html-tags.svg'
-import Skill from '../Skill/Skill'
+import softSkillsSvg from './../public/images/person-draw.svg'
+import hardSkillsSvg from './../public/images/html-tags.svg'
+import Skill from './Skill'
 
 function SkillsSection(){
     const softSklls = {

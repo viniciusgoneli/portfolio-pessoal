@@ -1,6 +1,6 @@
-import githubLogo from './../../public/images/github.png'
+import githubLogo from './../public/images/github.png'
 import Image from 'next/image'
-import styles from './Navbar.module.css'
+import styles from './../styles/Navbar.module.css'
 
 function Navbar(){
     return(

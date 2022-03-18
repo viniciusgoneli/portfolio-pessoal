@@ -1,6 +1,6 @@
-import bannerImage from './../../public/images/banner-image.png'
+import bannerImage from './../public/images/banner-image.png'
 import Image from 'next/image'
-import styles from './Banner.module.css'
+import styles from './../styles/Banner.module.css'
 
 function Banner(){
     const description = 'Meu nome é Vinicius, tenho 24 anos e sou desenvolvedor front-end com 6 meses de experiência na área. Eu amo resolver problemas usando programação a tal ponto de passar o dia todo estudando e me aprimorando.'
