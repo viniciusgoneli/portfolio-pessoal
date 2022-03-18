@@ -1,0 +1,50 @@
+.banner{
+    background-image: linear-gradient(to top, rgb(189, 189, 189), white);
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: var(--navbar-height);
+    min-height: var(--banner-height);
+    border-bottom: 2px solid black;
+}
+
+.banner__titleDescriptionDiv{
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 20px 60px 20px;
+}
+
+.titleDescriptionDiv__container{
+    width: 100%;
+}
+
+.titleDescriptionDiv__title{
+    font-size: 3.8rem;
+    margin-bottom: 10px;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    text-align: center;
+}
+
+.titleDescriptionDiv__subtitle{
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.titleDescriptionDiv__description{
+    font-size: 2.3rem;
+    text-align: justify;
+    overflow-wrap: break-word;
+}
+
+.banner__imgDiv{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: var(--banner-height);
+}
