@@ -2,6 +2,10 @@ import Image from 'next/image'
 import styles from './Skill.module.css'
 
 export default function Skill(props){
+    const skillsList = Object.entries(props.skillList).map(([skillName, skillLevel], index) => {
+        return <li className={styles.listDiv__listItem} key={index}><p>{ skillName }</p><p>{ skillLevel }</p></li>
+    })
+
     return(
         <section className={styles.skill}>
             <div className={styles.skill__imageDiv}>
@@ -10,6 +14,7 @@ export default function Skill(props){
             </div>
             <div className={styles.skill__listDiv}>
                 <ul className={styles.listDiv__list}>
+                    { skillsList }
                 </ul>
             </div>
         </section>
