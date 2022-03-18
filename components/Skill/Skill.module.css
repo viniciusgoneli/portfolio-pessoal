@@ -41,4 +41,11 @@
 .listDiv__listItem {
     width: 100%;
     display: flex;
+    justify-content: space-between;
+}
+
+.listItem__p{
+    font-size: 2.2rem;
+    line-height: 1.5;
+    letter-spacing: 2px;
 }

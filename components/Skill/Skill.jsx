@@ -3,7 +3,12 @@ import styles from './Skill.module.css'
 
 export default function Skill(props){
     const skillsList = Object.entries(props.skillList).map(([skillName, skillLevel], index) => {
-        return <li className={styles.listDiv__listItem} key={index}><p>{ skillName }</p><p>{ skillLevel }</p></li>
+        return(
+            <li className={styles.listDiv__listItem} key={index}>
+                <p className={styles.listItem__p}>{ skillName }</p>
+                <p className={styles.listItem__p}>{ skillLevel }</p>
+            </li>
+        )
     })
 
     return(
