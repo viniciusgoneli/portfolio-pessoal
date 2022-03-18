@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Navbar from './../components/Navbar/Navbar.jsx'
 
 export default function Home() {
   return (
+    <>
       <Head>
         <title>Vinicius Goneli | Desenvolvedor Web</title>
         <meta name='author' content='Vinicius Goneli' />
@@ -9,5 +11,7 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Navbar />
+    </>
   )
 }
