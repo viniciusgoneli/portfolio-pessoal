@@ -1,0 +1,54 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    height: var(--navbar-height);
+}
+
+.navbar__menuLinks {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+.menuLinks__link {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    margin-right: 25px;
+    font-weight: 550;
+    white-space: nowrap;
+}
+
+.menuLinks__link:hover {
+    color: rgb(121, 121, 121);
+}
+
+.menuLinks__link:last-of-type {
+    margin-right: 0;
+}
+
+.navbar__githubLink{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__githubLink:hover{
+    cursor: pointer;
+}
+
+.githubLink__title{
+    margin-left: 8px;
+    font-size: 1.5rem;
+}
+
+.githubLink__title:hover{
+    color: rgb(121, 121, 121);
+}

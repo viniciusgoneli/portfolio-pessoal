@@ -1,20 +1,19 @@
 import githubLogo from './../../public/images/github.png'
 import Image from 'next/image'
+import styles from './Navbar.module.css'
 
 function Navbar(){
     return(
-        <nav className='navbar'>
-            <button></button>
+        <nav className={styles.navbar}>
             <div>
-                <a href="#">Home</a>
-                <a href="#skill-section">Habilidades</a>
-                <a href="#">Portifólio</a>
-                <a href="#">Contato</a>
+                <a className={styles.menuLinks__link} href="#">Home</a>
+                <a className={styles.menuLinks__link} href="#">Habilidades</a>
+                <a className={styles.menuLinks__link} href="#">Portifólio</a>
+                <a className={styles.menuLinks__link} href="#">Contato</a>
             </div>
-            <a href={'https://github.com/viniciusgoneli'}>
-                <div></div>
+            <a className={styles.navbar__githubLink} href={'https://github.com/viniciusgoneli'}>
                 <Image src={githubLogo} width='30px' height='30px' />
-                <span>/viniciusgoneli</span>
+                <span className={styles.githubLink__title}>/viniciusgoneli</span>
             </a>
         </nav>
     )
