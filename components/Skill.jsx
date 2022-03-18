@@ -1,11 +1,20 @@
 import Image from 'next/image'
 import styles from './../styles/Skill.module.css'
 
+function formatSkillName(skill = ''){
+    const chars = [...skill];
+    const formatedChars = chars.map(char => {
+        if(char === char.toUpperCase()) return ' ' + char.toUpperCase();
+        return char.toUpperCase();
+    })
+    return formatedChars.join('');
+}
+
 export default function Skill(props){
     const skillsList = Object.entries(props.skillList).map(([skillName, skillLevel], index) => {
         return(
             <li className={styles.listDiv__listItem} key={index}>
-                <p className={styles.listItem__p}>{ skillName }</p>
+                <p className={styles.listItem__p}>{ formatSkillName(skillName) }</p>
                 <p className={styles.listItem__p}>{ skillLevel }</p>
             </li>
         )
