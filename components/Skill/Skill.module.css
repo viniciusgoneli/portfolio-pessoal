@@ -1,0 +1,44 @@
+.skill {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 2px solid black;
+    background-color: white;
+    padding: 25px;
+}
+
+.skill__imageDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageDiv__title{
+    color: black;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.imageDiv__image{
+    margin-bottom: 10px;
+}
+
+.skill__listDiv{
+    height: 100%;
+    width: 400px;
+    padding: 25px 0 25px 0;
+}
+
+.listDiv__list {
+    width: 100%;
+}
+
+.listDiv__listItem {
+    width: 100%;
+    display: flex;
+}
